@@ -68,7 +68,7 @@ bash .claude/skills/secure-code-review/scripts/scan.sh <대상경로> <출력디
 - 게시 위치: 호출 인자 `--publish <URL>`이 있으면 그 URL, 없으면 `publish-target.md`의 `default_publish_url`
 - `--no-publish`가 있으면 게시하지 않는다. 기본 URL이 비어 있거나 접근 불가면 게시하지 않고 사유와 보고서 경로를 알린다
 - 영역(repo 이름) 페이지를 상위로 두고, 이미 있으면 그 하위에 추가, 없으면 영역 페이지를 만든 뒤 추가
-- 제목: `소스코드 보안 점검 보고서 - <영역> (<YYYY-MM-DD HH:mm>)`
+- 제목: `<YYYY-MM-DD HH:mm> - <영역>`
 - 결재란·담당자·목표일은 비워 둔 채 게시, 시크릿 원문 없는지 게시 직전 확인
 - 게시 대상은 위 URL로 한정한다. 이메일, Jira, Slack 등 다른 곳으로는 사용자가 명시적으로 요청할 때만 보낸다
 - 최종 응답에는 보고서 `.md` **전체 경로**, 게시한 Confluence 페이지 URL(게시한 경우), 요약(심각도별 건수), 사용자가 기입할 항목(결재란·담당자·목표일), 스캐너 SKIPPED/FAILED 여부를 알린다

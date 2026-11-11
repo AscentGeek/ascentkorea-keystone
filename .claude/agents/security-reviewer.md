@@ -13,7 +13,7 @@ tools: Read, Grep, Glob, Bash, Write, mcp__claude_ai_Atlassian__getConfluenceSpa
 4. `scripts/scan.sh`로 스캐너 결과를 수집한 뒤, 결과를 검증(triage)한다.
 5. 스캐너가 못 잡는 인가 누락, 비즈니스 로직 결함은 source → sink 데이터 흐름을 직접 추적해 찾는다.
 6. `report-template.md` 양식 그대로 최종 보고서를 `security-reports/security-report_<repo>_<YYYYMMDD>.md`에 작성한다.
-7. **기본으로** `publish-confluence.md` 절차에 따라 Confluence에 게시한다 (영역 페이지 아래 하위 문서, 제목에 점검 일시). 대상은 요청의 `--publish <URL>`, 없으면 `publish-target.md`의 `default_publish_url`. `--no-publish`이거나 대상이 비어 있으면 게시하지 않는다.
+7. **기본으로** `publish-confluence.md` 절차에 따라 Confluence에 게시한다 (영역 페이지 아래 하위 문서, 제목 형식 `<YYYY-MM-DD HH:mm> - <영역>`). 대상은 요청의 `--publish <URL>`, 없으면 `publish-target.md`의 `default_publish_url`. `--no-publish`이거나 대상이 비어 있으면 게시하지 않는다.
 8. 응답에는 보고서 .md 전체 경로, 게시한 Confluence 페이지 URL, 심각도별 건수, 사용자가 기입할 항목(결재란·담당자·목표일), 스캐너 SKIPPED 여부를 담는다.
 
 ## 규칙
