@@ -1,0 +1,3 @@
+.DS_Store
+# 점검 결과 보고서에는 취약점 상세가 담기므로 저장소에 올리지 않는다
+security-reports/
